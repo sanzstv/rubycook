@@ -1,5 +1,17 @@
-<% random_songs = ["'Only Shallow' by My Bloody Valentine", "'Good Morning, Captain' by Slint", "'Bachelorette' by Björk", "'Dance Yrself Clean' by LCD Soundsytem", "'Shadowplay' by Joy Division", "'How Soon is Now' by the Smiths", "'Surgeon' by St. Vincent"] %>
+<%  %>
 
 <h1>Greetings</h1>
-<p>The song you should be listening to right now is <%= random_songs.sample %></p>
-<p>The time is now <%= Time.now %></p>
+<p>The song you should be listening to right now is <%= @song %></p>
+<p>The time is now <%= @time %></p>
+
+<p>The time is now <%= time_formatting(@time) %></p>
+
+</br>
+</br>
+</br>
+<!--<p> Fun fact: this page has been viewed <%= @display_count %> time(s)</p>-->
+<p> <%= link_to "My Github", "https://github.com/sanzstv" %></p></br>
+<p> <%= link_to "Leave page", greeter_goodbye_path%></p>
+
+<p> <%= link_to "Learn Python! (because why not?)", courses_index_path%></p>
+

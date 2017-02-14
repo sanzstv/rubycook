@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+body{
+	font-family: Tahoma
+}
+
+.course_search_box{
+	float: right;
+}

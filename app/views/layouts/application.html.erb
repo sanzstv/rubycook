@@ -9,6 +9,14 @@
   </head>
 
   <body>
+  <div class = "course_search_box">
+  <!-- search should be on every page-->
+  <%= form_tag(courses_index_path, :method => "get", id: "search-courses") do %>
+    <%= text_field_tag :looking_for, params[:looking_for], placeholder: "Search Courses" %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %>
+</div>
     <%= yield %>
+
   </body>
 </html>
