@@ -1,6 +1,8 @@
 
 <h1 class = "courselist">Showing classes with search term '<%= @search_query %>'</h1>
-
+<% if @courses.nil? %>
+<p> Sorry, no courses found.</p>
+<% else %>
 <table class = "coursetable">
 <tr>
 	<th class ="coursehead">Image
@@ -21,3 +23,4 @@
 	</tr>
 	<% end %>
 </table>
+	<% end %>
